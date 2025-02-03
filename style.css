@@ -1,0 +1,145 @@
+:root{
+    --orange: rgba(209, 135, 7, 0.953);
+    --white:rgb(238, 245, 244);
+    --yellow:rgb(232, 228, 4);
+    --crimson:crimson;
+}
+
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.a{
+    background-image: url('pexels-edward-eyer-1049626.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+header a{
+    text-decoration: none;
+    color: var(--orange);
+    padding: 20px;
+    margin-bottom:50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+.maintext{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 50px;
+    justify-content: center;
+}
+header{
+    display: flex;
+}
+#logo{
+    flex: 3;
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+nav {
+    flex: 2;
+    display: flex;
+    font-weight: bolder;
+    font-size: 30px;
+}
+nav a{
+    flex: 1;
+
+}
+nav a:hover{
+    color:var(--yellow)
+}
+.text1{
+    color:var(--white);
+    font-size: 45px;
+    font-weight: bolder;
+    padding:10px;
+    }
+.text2{
+    color: var(--white);
+    font-size: 20px;
+}
+.text3{
+    color: var(--white);
+    font-size: 20px;
+}
+.maintext div{
+    margin-top: 30px;
+    
+}
+.maintext button{
+    width: 160px;
+    height: 60px;
+    margin-top: 35px;
+    border-color: var(--yellow);
+    padding: 6px;
+    background-color: var(--yellow)
+}
+.list{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    background: black;
+    color: var(--white);
+    padding: 30px;
+}
+.add{
+    display: grid;
+    background: black;
+    color: var(--white);
+    padding: 30px;
+}
+#menuheading,#locationheading{
+    color: var(--orange);
+    background: black;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+.list th{
+    color: var(--crimson);
+    font-size: 25px;
+}
+table{
+    width: 100%;
+    padding: 1em;
+    color: var(--white);
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    flex: 1;
+    justify-self: left;
+}
+.courses{
+    grid-row: span 2;
+}
+.add h2{
+    color: var(--crimson);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.add{
+    display: flex;
+    flex-wrap: wrap;
+}
+.add div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+footer{
+    background: linear-gradient(to right, rgb(6, 6, 6),rgb(35, 33, 33));
+    color: var(--white);
+    padding: 2px;
+}
